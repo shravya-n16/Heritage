@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Site</title>
+    <style>
+        body {
+            background-image: url('4-native-american-indian-feathers-grunge-background-space-text-native-american-indian-feathers-grunge-background-340737862.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase; /* Make text uppercase */
+            padding: 10px;
+        }
+
+        /* Hover effect for ABOUT link */
+        .hover-effect {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-effect:hover {
+            color: #ff6347; /* Change color on hover */
+        }
+
+        /* Information box that will appear on hover for ABOUT */
+        .hover-info {
+            display: none;
+            position: absolute;
+            bottom: -160px;  /* Adjusted to move the box further down */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Show the information box when hovering over the ABOUT link */
+        .hover-effect:hover .hover-info {
+            display: block;
+        }
+
+        /* Hover effect for CONTACT link */
+        .contact-effect {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-effect:hover {
+            color: #ff6347; /* Change color on hover */
+        }
+
+        /* Information box for CONTACT that will appear on hover */
+        .contact-info {
+            display: none;
+            position: absolute;
+            bottom: -160px;  /* Adjusted to move the info box below the link */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Show the information box when hovering over the CONTACT link */
+        .contact-effect:hover .contact-info {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            color: black; /* WELCOME text in black */
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="2-heritage-places.html">HERITAGE PLACES</a></li>
+            <li><a href="#" class="hover-effect">ABOUT
+                <span class="hover-info">This site showcases the rich heritage and culture of iconic landmarks in India. Explore historical sites like Qutub Minar, Taj Mahal, and more!</span>
+            </a></li>
+            <li><a href="3-login.html">LOGIN</a></li>
+            <li><a href="#" class="contact-effect">CONTACT
+                <span class="contact-info">For further details, please contact us at info@heritagesite.com and +91 8987654321</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <h1>WELCOME TO HERITAGE SITE</h1>
+
+</body>
+</html>

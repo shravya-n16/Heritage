@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Places</title>
+    <style>
+        body {
+            background-image: url('4-native-american-indian-feathers-grunge-background-space-text-native-american-indian-feathers-grunge-background-340737862.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+
+        .image-container {
+            width: 30%;
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 2px solid #ddd; /* Border for the box */
+            padding: 15px;
+            background-color: #f1e0c6; /* Nude color for the background of the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for the box */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 300px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures the image is cropped */
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Special class for Qutub Minar to crop from the bottom */
+        .image-container img.qutub-minar {
+            object-position: top; /* Crops the bottom part, keeps the top part visible */
+        }
+
+        .image-container h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333; /* Text color */
+            text-transform: uppercase;
+        }
+
+        .image-container .description {
+            font-size: 14px;
+            color: black; /* Black text color for description */
+            margin-top: 10px;
+        }
+
+        .image-container .more-info {
+            font-size: 14px; /* Matching the font size of description */
+            color: black;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="2-heritage-places.html">HERITAGE PLACES</a></li>
+            <li><a href="#" class="hover-effect">ABOUT</a></li>
+            <li><a href="3-login.html">LOGIN</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <h1>Heritage Places</h1>
+
+    <div class="content">
+        <div class="image-container">
+            <h2>Qutub Minar, Delhi</h2>
+            <img src="5-Qutub_Minar_in_Delhi_03-2016.jpg" alt="Qutub Minar" class="qutub-minar">
+            <p class="description">The Qutub Minar is a UNESCO World Heritage Site, an iconic symbol of Indo-Islamic Afghan architecture, located in Delhi.</p>
+            <p class="more-info">
+                It stands 73 meters tall and is the tallest brick minaret in the world. It was built in 1193 by Qutb-ud-din Aibak, the first ruler of Delhi. The minaret is known for its intricate carvings and inscriptions in Arabic.
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>Red Fort, Delhi</h2>
+            <img src="6-Red_Fort_in_Delhi_03-2016_img3.jpg" alt="Red Fort">
+            <p class="description">The Red Fort in Delhi, another UNESCO World Heritage Site, represents the might of Mughal architecture with its red sandstone walls.</p>
+            <p class="more-info">
+                Built by Emperor Shah Jahan in the mid-17th century, the Red Fort served as the main residence of the Mughal emperors for around 200 years. The fort is a symbol of India's rich history and was the site of India's independence declaration in 1947.
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>Ajanta Caves, Maharashtra</h2>
+            <img src="7-ajanta-caves-chhatrapati-sambhaji-nagar-maharashtra-attr-hero-2.jpeg" alt="Ajanta Caves">
+            <p class="description">Ajanta Caves are rock-cut Buddhist temples known for their stunning sculptures and paintings, dating back to the 2nd century BCE.</p>
+            <p class="more-info">
+                The caves contain detailed frescoes depicting the life of the Buddha and are famous for their historical and artistic value. The caves were abandoned for centuries and rediscovered in the 19th century.
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>Fatehpur Sikri, Uttar Pradesh</h2>
+            <img src="8-fatehpur_sikri.jpg" alt="Fatehpur Sikri">
+            <p class="description">Fatehpur Sikri, built by the Mughal Emperor Akbar, is a city known for its historical significance and impressive architecture.</p>
+            <p class="more-info">
+                Fatehpur Sikri was the capital of the Mughal Empire for a brief period during Akbar's reign, before it was abandoned due to water supply issues. It is home to several impressive structures like Jama Masjid, Buland Darwaza, and Panch Mahal.
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>Hampi, Karnataka</h2>
+            <img src="9-lotus-mahal-hampi-karnataka-2-city-hero.jpeg" alt="Hampi">
+            <p class="description">Hampi, the ancient city of Vijayanagara, is a UNESCO World Heritage Site filled with fascinating temples and ruins from the 14th century.</p>
+            <p class="more-info">
+                The ruins of Hampi include ancient temples, palaces, and monuments. The Vijayanagara Empire flourished in this area, and today it is an archaeological site showcasing the grandeur of the ancient city.
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>Taj Mahal, Agra</h2>
+            <img src="10-Taj_Mahal_(Edited).jpeg" alt="Taj Mahal">
+            <p class="description">The Taj Mahal is one of the Seven Wonders of the World, a stunning example of Mughal architecture built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+            <p class="more-info">
+                The Taj Mahal is renowned for its white marble structure, which is considered one of the finest examples of Mughal architecture. It has become an enduring symbol of love and is visited by millions of tourists every year.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

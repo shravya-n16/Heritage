@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Heritage Site</title>
+    <style>
+        body {
+            background-image: url('4-native-american-indian-feathers-grunge-background-space-text-native-american-indian-feathers-grunge-background-340737862.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Black background for the box */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: 30%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align elements to the top */
+            height: auto; /* Adjusted to fit content */
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0; /* Reduced margin between the fields */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333; /* Dark background for inputs */
+            color: white;
+            box-sizing: border-box; /* Ensure padding does not cause overflow */
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .success-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white; /* White background for success */
+            color: #4CAF50; /* Green text color */
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return savePassword()">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Success Message in White Box with Green Text -->
+    <div id="successMessage" class="success-message">
+        Password saved
+    </div>
+
+    <script>
+        function savePassword() {
+            // Get username and password values
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if both fields are filled
+            if (username && password) {
+                // Hide the login form
+                document.getElementById('loginContainer').style.display = 'none';
+
+                // Show the success message
+                document.getElementById('successMessage').style.display = 'block';
+
+                // Clear the username and password fields
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+
+                // Allow the user to type in new username and password
+                setTimeout(function() {
+                    document.getElementById('loginContainer').style.display = 'block'; // Re-display the form
+                    document.getElementById('successMessage').style.display = 'none'; // Hide the success message
+                }, 2000); // Reset after 2 seconds
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission if fields are empty
+        }
+    </script>
+
+</body>
+</html>
