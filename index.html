@@ -6,11 +6,13 @@
     <title>Heritage Site</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             background-image: url('4-native-american-indian-feathers-grunge-background-space-text-native-american-indian-feathers-grunge-background-340737862.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -113,13 +115,11 @@
         }
 
         footer {
+            margin-top: auto;  /* Push footer to the bottom */
             background-color: rgba(0, 0, 0, 0.7);
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
         footer .contact {
